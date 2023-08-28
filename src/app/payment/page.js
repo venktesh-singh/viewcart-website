@@ -17,12 +17,12 @@ export default function page() {
                             <div className="status_bar">
                                 <div className="content_bar">
                                     <p>
-                                        <a href="#"><Image src="images/back-icon.png" alt="" /> Back to Dashboard</a> <span>Your profile completion status</span>
+                                        <a href="#"><Image src="/images/back-icon.png" width={30} height={13} priority alt="" /> Back to Dashboard</a> <span>Your profile completion status</span>
                                     </p>
                                 </div>
                                 <div className="progressBar">
                                     <div className="progress">
-                                        <div className="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="max-width: 60%;"></div>
+                                        <div className="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={{"maxWidth": "60%"}}></div>
                                         <span className="title">45%</span>
                                     </div>
                                 </div>
@@ -43,7 +43,7 @@ export default function page() {
                         <div className="col-lg-3 col-7">
                             <div className="searchBox">
                                 <input type="search" className="form-control" placeholder="Search Order Settlements" />
-                                <a href="#"><Image src="images/search-icon.png" alt="" /> </a>
+                                <a href="#"><Image src="/images/search-icon.png" width={11} height={11} priority alt="" /> </a>
                             </div>
                         </div>
                     </div>

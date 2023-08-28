@@ -9,7 +9,7 @@ export default function Footer() {
                         <div className="modal-content modal-content-centerd">
                             <div className="modal-header">
                                 <h4 className="modal-title">Log in</h4>
-                                <button type="button" className="close" data-dismiss="modal"><Image src="images/remove.png" alt="" /></button>
+                                <button type="button" className="close" data-dismiss="modal"><Image src="/images/remove.png" width={291} height={292} priority alt="" /></button>
                             </div>
 
                             <div className="modal-body">
@@ -17,17 +17,17 @@ export default function Footer() {
                                     <div className="row">
                                         <div className="col-lg-12 col-12">
                                             <input type="email" className="form-control" placeholder="E-mail" />
-                                            <span><Image src="images/mail-icon.png" alt="" /> </span>
+                                            <span><Image src="/images/mail-icon.png" width={291} height={292} priority alt="" /> </span>
                                         </div>
                                         <div className="col-lg-12 col-12">
                                             <input type="password" className="form-control" placeholder="Password" />
-                                            <span><Image src="images/eyes-icon.png" alt="" /> </span>
+                                            <span><Image src="/images/eyes-icon.png" width={183} height={97} priority alt="" /> </span>
                                             <div className="password"><a href="#">Forgot your password?</a></div>
                                         </div>
                                         <div className="col-lg-12 col-12">
                                             <div className="button_box">
                                                 <button className="btn-danger btn_login" href="#">Login</button>
-                                                <p>By continuing, I agree to Viewcart24`s <a href="#">Terms of Use</a> <div dangerouslySetInnerHTML={{ __html: '&amp;' }} /> <a href="#">Privacy Policy</a></p>
+                                                <p>By continuing, I agree to Viewcart24`s <a href="#">Terms of Use</a> && <a href="#">Privacy Policy</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -139,27 +139,27 @@ export default function Footer() {
                                 <div className="row">
                                     <div className="col-lg-4">
                                         <div className="footer_sec_logo">
-                                            <Image src="images/logo.png" alt="" />
+                                            <Image src="/images/logo.png" width={219} height={33} priority alt="" />
                                         </div>
                                     </div>
                                     <div className="col-lg-2 col-6 d-flex align-items-center">
                                         <div className="footer_sec">
-                                            <a href="#"><Image src="images/call-icon.png" alt="" /> +91 987 654 3210</a>
+                                            <a href="#"><Image src="/images/call-icon.png" width={283} height={291} priority alt="" /> +91 987 654 3210</a>
                                         </div>
                                     </div>
                                     <div className="col-lg-2 col-6 d-flex align-items-center">
                                         <div className="footer_sec">
-                                            <a href="#"><Image src="images/support-icon.png" alt="" />Become a seller</a>
+                                            <a href="#"><Image src="/images/support-icon.png" width={512} height={512} priority alt="" />Become a seller</a>
                                         </div>
                                     </div>
                                     <div className="col-lg-2 col-6 d-flex align-items-center">
                                         <div className="footer_sec">
-                                            <a href="#"><Image src="images/earn-icon.png" alt="" />Earn With view cart</a>
+                                            <a href="#"><Image src="/images/earn-icon.png" width={75} height={75} priority alt="" />Earn With view cart</a>
                                         </div>
                                     </div>
                                     <div className="col-lg-2 col-6 d-flex align-items-center">
                                         <div className="footer_sec">
-                                            <a href="#"><Image src="images/add-icon.png" alt="" />Advertisement</a>
+                                            <a href="#"><Image src="/images/add-icon.png" width={37} height={40} priority alt="" />Advertisement</a>
                                         </div>
                                     </div>
                                 </div>
@@ -176,7 +176,7 @@ export default function Footer() {
                         </div>
                         <div className="col-lg-6">
                             <div className="payment_icon">
-                                <Image src="images/payment-images.png" alt="" />
+                                <Image src="/images/payment-images.png" width={539} height={26} priority alt="" />
                             </div>
                         </div>
                     </div>
