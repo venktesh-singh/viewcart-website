@@ -25,7 +25,6 @@ export default function RootLayout({
             <meta name="description" content="Kohler is a leading manufacturing brand in Nepal. We provide complete bathroom accessories, fittings, faucets, showers, toilet seats & bathtubs. Explore the exquisite" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="stylesheet" href="css/bootstrap.min.css" />
-            <link rel="stylesheet" href="css/owl.carousel.min.css" />
             <link rel="stylesheet" href="css/owl.theme.default.min.css" />
             <link rel="stylesheet" href="css/slick.css" />
             <link rel="stylesheet" href="css/slick-theme.css" />
@@ -44,7 +43,6 @@ export default function RootLayout({
         <Script src="/js/jquery-2.2.4.min.js"/>
         <Script src="/js/popper.min.js"/>
         <Script src="/js/bootstrap.min.js"/>
-        <Script src="/js/owl.carousel.min.js"/>
         <Script src="/js/slick.min.js"/>
         <Script src="/js/counter.min.js"/>
         <Script src="/js/waypoint.min.js"/>
@@ -55,7 +53,6 @@ export default function RootLayout({
         <Script src="/js/contact-form-Script.js"/>
         <Script src="/js/custom.js"/>
         <Script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"/>
-        <Script src="/js/jquery.jcarousellite.min.js"/>
         <Script src="/js/theme.js"/>
         <Script src="/js/main.js"/>
         <Script src="/js/jquery.fancybox.min.js"/>

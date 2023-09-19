@@ -1,12 +1,64 @@
+'use client';
 import React from "react";
 import Header from "../components/common/Header/Header";
 import Footer from "../components/common/Footer/Footer";
 import TopBar from "../components/common/TopBar/TopBar";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/image";  
+import Slider from "react-slick";   
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import ImageGallery from "react-image-gallery";  
+import 'react-image-gallery/styles/css/image-gallery.css';  
 
-export default function page() {  
-    return <>
+export default function page() { 
+    
+    var settings11 = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1
+    }; 
+
+    var settings12 = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1
+    };
+    
+    const images = [
+        {
+          original: "/images/product-main.jpg",
+          thumbnail: "/images/product-main.jpg",
+        },
+        {
+          original: "/images/iphone-video.jpg",
+          thumbnail: "/images/iphone-video.jpg",
+        },
+        {
+          original: "images/iphone-1.jpg",
+          thumbnail: "images/iphone-1.jpg",
+        },
+        {
+            original: "images/iphone-2.jpg",
+            thumbnail: "images/iphone-2.jpg",
+        },
+        {
+            original: "images/iphone-3.jpg",
+            thumbnail: "images/iphone-3.jpg",
+        },
+        {
+            original: "images/product-main.jpg",
+            thumbnail: "images/product-main.jpg",
+        },
+        {
+            original: "images/iphone-video.jpg",
+            thumbnail: "images/iphone-video.jpg",
+        },
+    ];
+
+    return( <div>
         <TopBar/>
         <Header/>
             <section className="inr-wrap bg_ofwhite">
@@ -33,36 +85,7 @@ export default function page() {
                     <div className="col-lg-5 col-sm-5 col-md-5 col-12">
                     <div className="product_gallery">
                         <div className="product-images demo-gallery">
-                        <div className="main-img-slider">
-                            <a data-fancybox="gallery" href="images/product-main.jpg">
-                                <Image src="/images/product-main.jpg" width={103} height={102} priority alt="Product Main"  />
-                            </a>
-                            <a data-fancybox="gallery" href="images/iphone-video.jpg">
-                                <Image src="/images/iphone-video.jpg" width={416} height={281} priority alt="iPhone Video"  />
-                            </a>
-                            <a data-fancybox="gallery" href="images/iphone-1.jpg">
-                                <Image src="/images/iphone-1.jpg" width={416} height={416} priority alt="iPhone 1"  />
-                            </a>
-                            <a data-fancybox="gallery" href="images/iphone-2.jpg">
-                                <Image src="/images/iphone-2.jpg" width={416} height={416} priority alt="iPhone 2"  />
-                            </a>
-                            <a data-fancybox="gallery" href="images/iphone-3.jpg">
-                                <Image src="/images/iphone-3.jpg" width={416} height={416} priority alt="iPhone 3"  />
-                            </a>
-                        </div>
-                        <ul className="thumb-nav">
-                            <li><Image src="/images/product-main.jpg" width={416} height={416} priority alt="Product Main" /></li>
-                            <li><Image src="/images/iphone-video.jpg" width={103} height={102} priority alt="iPhone Video" /></li>
-                            <li><Image src="/images/iphone-1.jpg" width={416} height={416} priority alt="iPhone 1" /></li>
-                            <li><Image src="/images/iphone-2.jpg" width={416} height={416} priority alt="iPhone 2" /></li>
-                            <li><Image src="/images/iphone-3.jpg" width={416} height={416} priority alt="iPhone 3" /></li>
-                            <li><Image src="/images/product-main.jpg" width={416} height={416} priority alt="Product Main" /></li>
-                            <li><Image src="/images/iphone-video.jpg" width={103} height={102} priority alt="iPhone Video" /></li>
-                            <li><Image src="/images/iphone-1.jpg" width={416} height={416} priority alt="iPhone 1" /></li>
-                            <li><Image src="/images/iphone-2.jpg" width={416} height={416} priority alt="iPhone 2" /></li>
-                            <li><Image src="/images/iphone-3.jpg" width={416} height={416} priority alt="iPhone 3" /></li>
-                        
-                        </ul>
+                        <ImageGallery items={images} />
                         </div>
                         <div className="add_cart_btn">
                         <div className="theme-button">
@@ -366,7 +389,8 @@ export default function page() {
                 </div>
                 <div className="row">
                     <div className="col-lg-12 col-sm-12 col-md-12 col-12">
-                    <div className="product-related owl-carousel owl-theme">
+                    <Slider {...settings11}>
+                    
                         <div className="recent-items">
                         <div className="product_item">
                             <div className="top_sale">
@@ -540,7 +564,7 @@ export default function page() {
                             </div>
                         </div>
                         </div>
-                    </div>
+                    </Slider>
                     </div>
                 </div>
                 </div>
@@ -892,7 +916,7 @@ export default function page() {
                 </div>
                 <div className="row">
                     <div className="col-lg-12 col-sm-12 col-md-12 col-12">
-                    <div className="product-related owl-carousel owl-theme">
+                    <Slider {...settings12}>  
                         <div className="recent-items">
                         <div className="product_item">
                             <div className="top_sale">
@@ -1066,7 +1090,7 @@ export default function page() {
                             </div>
                         </div>
                         </div>
-                    </div>
+                    </Slider>
                     </div>
                 </div>
                 </div>
@@ -1127,5 +1151,5 @@ export default function page() {
 
 
         <Footer/>
-    </>
-}      
+    </div>
+)}      
